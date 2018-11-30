@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "876592108425",
+    "firebase_url": "https://studentchatapp-2e4dc.firebaseio.com",
+    "project_id": "studentchatapp-2e4dc",
+    "storage_bucket": "studentchatapp-2e4dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876592108425:android:8462d137e7fcbbd2",
+        "android_client_info": {
+          "package_name": "com.demos.studentchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876592108425-h20g0542tnfbekmrem1fnnsup0d1m37o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demos.studentchatapp",
+            "certificate_hash": "9499bcfa0b4543ed19d57d0468bfffbed7b2bfa5"
+          }
+        },
+        {
+          "client_id": "876592108425-geltaen1243cq1ggrvr4569br925ckvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjQx621UeAYle8IMXoIiiPPPIc4rKDf6U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876592108425-geltaen1243cq1ggrvr4569br925ckvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/appbarlayout_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="44dp"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/marolix_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Marolix" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8.0sp"
+        android:paddingBottom="2dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        app:stackFromEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:paddingTop="1dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/smiley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:src="@drawable/smiley"
+            android:visibility="visible" />
+
+        <!--<EditText
+            android:id="@+id/msg_input"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et"
+            android:padding="6dp" />-->
+
+        <!--<hani.momanii.supernova_emoji_library.Helper.EmojiconEditText-->
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/msg_input"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et"
+            android:inputType="textMultiLine"
+            android:padding="6dp" />
+
+        <ImageView
+            android:id="@+id/btn_send"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/send_bg"
+            android:padding="10dp"
+            android:src="@drawable/ic_send"
+            android:text="Send" />
+    </LinearLayout>
+
+</LinearLayout>
